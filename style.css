@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-Family: 'Vollkorn', Serif;
+    font-Size: 50px; 
+}
+h3{
+    font-Family: 'Raleway', Sans-Serif;
+    font-Size: 15px;
+}
+.container{
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+}
