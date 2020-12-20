@@ -1,9 +1,10 @@
-const tempusRerum = '1st Jan 2021';
+const newYear = '1 Jan 2021';
 
-function cowntdown (){
-    const newYearsDate = new Date (tempusRerum);
+function countdown (){
+    const newYearDate = new Date (newYear);
     const currentDate = new Date();
-
-    console.log(tempusRerum - currentDate);
+    console.log(newYearDate - currentDate);
 }
-cowntdown();
+countdown();
+
+setInterval(countdown, 1000);
