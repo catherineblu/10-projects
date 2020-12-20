@@ -4,6 +4,8 @@ function countdown (){
     const newYearDate = new Date (newYear);
     const currentDate = new Date();
     console.log(newYearDate - currentDate);
+
+    const seconds = (newYearDate - currentDate) *1000;
 }
 countdown();
 
