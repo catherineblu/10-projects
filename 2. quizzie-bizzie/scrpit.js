@@ -35,4 +35,12 @@ const quizData = [
         d: 'I dunno :D',
         correct: 'b'
     }
-]
+];
+
+let currentQuestion = 0;
+loadQuiz();
+
+function loadQuiz(){
+
+    currentQuestion++;
+}
