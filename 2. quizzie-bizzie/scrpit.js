@@ -57,9 +57,11 @@ function loadQuiz(){
     d_text.innerText = currentQuizData.d;
 }
 
+function getSelected (){
+    
+}
 submitBtn.addEventListener('click', () => {
     currentQuiz++;
-
     if (currentQuiz < quizData.length){
         loadQuiz();
     } else{
