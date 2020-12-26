@@ -65,6 +65,8 @@ function loadQuiz() {
 function getSelected() {
   const answerEls = document.querySelectorAll(".answer");
 
+  const answer = undefined;
+
   answerEls.forEach((answerEls) => {
     if (answer.checked) {
       return answerEl.id;
@@ -74,16 +76,15 @@ function getSelected() {
 }
 
 submitBtn.addEventListener("click", () => {
-    if (answer) {
-        if (answer === quizData[currentQuiz])
-  currentQuiz++;
+    const answer = getSelected();
 
-  const answer = getSelected();
-
-    if (currentQuiz < quizData.length) {
-      loadQuiz();
-    } else {
-      alert("You finished! ");
-    }
-  }
+  
+    if (answer ){
+            currentQuiz++;
+            if (currentQuiz < quizData.length) {
+                loadQuiz();
+              } else {
+                alert("You finished! ");
+              }
+    }    
 });
