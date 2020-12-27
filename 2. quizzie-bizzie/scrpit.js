@@ -65,8 +65,6 @@ function loadQuiz() {
 }
 
 function getSelected() {
-  
-
   let answer = undefined;
 
   answerEls.forEach((answerEl) => {
@@ -78,26 +76,26 @@ function getSelected() {
   return answer;
 }
 
-function deselectAnswers(){
+function deselectAnswers() {
   answerEls.forEach((answerEl) => {
     answerEl.checked = false;
   });
 }
 
 submitBtn.addEventListener("click", () => {
-    const answer = getSelected();
+  const answer = getSelected();
 
-    console.log(answer);
-  
-    if (answer){
-      if (answer === quizData[currentQuiz].correct){
-        score++;
-      }
-            currentQuiz++;
-            if (currentQuiz < quizData.length) {
-                loadQuiz();
-              } else {
-                alert("You finished! ");
-              }
-    }    
+  console.log(answer);
+
+  if (answer) {
+    if (answer === quizData[currentQuiz].correct) {
+      score++;
+    }
+    currentQuiz++;
+    if (currentQuiz < quizData.length) {
+      loadQuiz();
+    } else {
+      alert("You finished! ");
+    }
+  }
 });
