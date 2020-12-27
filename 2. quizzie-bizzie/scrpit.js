@@ -40,6 +40,7 @@ const quizData = [
     correct: "b",
   },
 ];
+const answerEls = document.querySelectorAll(".answer");
 
 const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
@@ -63,7 +64,7 @@ function loadQuiz() {
 }
 
 function getSelected() {
-  const answerEls = document.querySelectorAll(".answer");
+  
 
   let answer = undefined;
 
@@ -74,6 +75,12 @@ function getSelected() {
   });
 
   return answer;
+}
+
+function deselectAnswers(){
+  answerEls.forEach((answerEl) => {
+    answerEl.checked = false;
+  });
 }
 
 submitBtn.addEventListener("click", () => {
