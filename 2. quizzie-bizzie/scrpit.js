@@ -55,6 +55,7 @@ let score = 0;
 loadQuiz();
 
 function loadQuiz() {
+  deselectAnswers();
   const currentQuizData = quizData[currentQuiz];
   questionEl.innerText = currentQuizData.question;
   a_text.innerText = currentQuizData.a;
