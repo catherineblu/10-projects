@@ -29,7 +29,7 @@ p{
 }
 .main-container {
   display: flex;
-  position: absolute;
+  
   width: 100%;
 }
 .trophy-room {
@@ -52,5 +52,6 @@ p{
 }
 .footer-container{
   background-color:  #fbe122;
+  height: 100%;
 }
 
