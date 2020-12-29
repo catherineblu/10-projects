@@ -46,8 +46,10 @@ color: #fbe122;
   padding: 10%;
 }
 .footer-container{
+  font-size: 22px;
   background-color:  #fbe122;
-  height: 100%;
+  padding: 56px;
+  height: 50%;
   display: flex;
   justify-content: space-between;
 }
@@ -56,6 +58,7 @@ color: #fbe122;
   border-radius: 40%;
   border:none;
   cursor: pointer;
-  padding:10px 10px;
+  padding:1rem;
   font-weight: bold;
+  text-decoration: none;
 }
