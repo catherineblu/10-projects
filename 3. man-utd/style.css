@@ -6,11 +6,7 @@
 }
 h3{
 color: #fbe122;
-  font-size: 2.5rem;
-}
-p{
-    color: #fbe122;
-    font-size: 1rem;
+  font-size: 1.5rem;
 }
 .nav-container {
   background-color: #da291c;
@@ -29,7 +25,6 @@ p{
 }
 .main-container {
   display: flex;
-  
   width: 100%;
 }
 .trophy-room {
@@ -53,5 +48,14 @@ p{
 .footer-container{
   background-color:  #fbe122;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-
+.btn-primary{
+  background-color: #fbe122;
+  border-radius: 40%;
+  border:none;
+  cursor: pointer;
+  padding:10px 10px;
+  font-weight: bold;
+}
