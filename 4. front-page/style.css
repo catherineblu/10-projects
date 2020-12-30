@@ -1,0 +1,12 @@
+:root{
+    --primaryColor:	#1c2431;
+    --mainBackground:#161638;
+    --mainFooter: #0b1523;
+    --mainTestimonials:#202a3c;
+    --mainCyan:#65e2d9;
+    --mainBlue: #339ecc;
+    --mainWhite: #ffffff;
+}
+header {
+    background-color: var(--mainBackground);
+}
