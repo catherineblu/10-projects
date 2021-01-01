@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:wght@400;700&display=swap');
 :root{
     --primaryColor:	#1c2431;
     --mainBackground:#161638;
@@ -7,6 +8,15 @@
     --mainBlue: #339ecc;
     --mainWhite: #ffffff;
 }
+body{
+    color: var(--mainWhite);
+    font-family: 'Montserrat', sans-serif;
+}
 header {
     background-color: var(--mainBackground);
+}
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
 }
