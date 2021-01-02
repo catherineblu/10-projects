@@ -1,22 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:wght@400;700&display=swap');
 :root{
-    --primaryColor:	#1c2431;
-    --mainBackground:#161638;
-    --mainFooter: #0b1523;
-    --mainTestimonials:#202a3c;
-    --mainCyan:#65e2d9;
-    --mainBlue: #339ecc;
-    --mainWhite: #ffffff;
+    --primaryColor:	#1c2431; /*intro and email sign up background*/
+    --mainBackground:#181f2a;/*main background*/
+    --mainFooter: #0b1523;/*footer*/
+    --mainQuotes:#202a3c;/*quotes background*/
+    --mainCyan:#65e2d9;/*inside call-to action gradient*/
+    --mainBlue: #339ecc;/*inside call-to action gradient*/
+    --mainWhite: #ffffff;/*just white :X*/
 }
 body{
-    color: var(--mainWhite);
+    background-color: var(--mainBackground);
     font-family: 'Montserrat', sans-serif;
 }
 header {
-    background-color: var(--mainBackground);
+    background-color: var(--primaryColor);
 }
 .container{
     margin: 0 auto;
     max-width: 100%;
     width: 1200px;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.nav-ul li a{
+    color: var(--mainWhite);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
