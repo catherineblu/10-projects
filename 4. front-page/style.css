@@ -11,18 +11,29 @@
 body{
     background-color: var(--mainBackground);
     font-family: 'Montserrat', sans-serif;
+    color: var(--mainWhite);
 }
 header {
     background-color: var(--primaryColor);
+    background-image: url('images/bg-curvy-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 80px;
 }
 .container{
     margin: 0 auto;
     max-width: 100%;
     width: 1200px;
 }
+img{
+    max-width: 100%;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
+    padding: 50px;
 }
 .nav-ul{
     display: flex;
@@ -31,7 +42,32 @@ nav{
 }
 .nav-ul li a{
     color: var(--mainWhite);
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
     text-decoration: none;
+}
+.logo{
+    height: 60px;
+}
+.hero{
+    margin: 20px auto;
+    max-width: 100%;
+    width: 600px;
+    text-align: center;
+}
+.hero p{
+    line-height: 1.5;
+    font-family: 'Esteban', serif;
+
+}
+h1{
+    line-height: 1.5;
+}
+.btn{
+   color: white;
+   padding: 18px 80px;
+   border-radius: 50px;
+   background-image: linear-gradient(to right, #65e2d9, #339ecc); 
+   border: 0;
 }
 
