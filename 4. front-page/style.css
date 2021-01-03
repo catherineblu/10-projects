@@ -70,4 +70,16 @@ h1{
    background-image: linear-gradient(to right, #65e2d9, #339ecc); 
    border: 0;
 }
+.feature{
+
+    width: 400px;
+    text-align: center;
+    margin: 40px;
+}
+.feature img{
+    color: var(--mainWhite);
+}
+.row{
+    display: flex;
+}
 
