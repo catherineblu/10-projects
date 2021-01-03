@@ -25,9 +25,13 @@ header {
     margin: 0 auto;
     max-width: 100%;
     width: 1200px;
+
 }
 img{
     max-width: 100%;
+}
+p{
+    line-height: 1.5;
 }
 
 nav{
@@ -55,11 +59,7 @@ nav{
     width: 600px;
     text-align: center;
 }
-.hero p{
-    line-height: 1.5;
-    font-family: 'Esteban', serif;
 
-}
 h1{
     line-height: 1.5;
 }
@@ -84,14 +84,20 @@ h1{
     align-items: center;
     justify-content: center;
 }
-.feature p{
-    line-height: 1.4;;
-}
+
 .info{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .info img{
-    width: 300px;
+    margin-right: 50px;
+    width: 400px;
+}
+.info-text{
+    flex: 1;
+    width: 400px;
 }
 
 
