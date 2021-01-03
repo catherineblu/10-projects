@@ -71,15 +71,27 @@ h1{
    border: 0;
 }
 .feature{
-
     width: 400px;
     text-align: center;
     margin: 40px;
 }
 .feature img{
-    color: var(--mainWhite);
+    color: var(--mainWhite) !important;
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+.feature p{
+    line-height: 1.4;;
+}
+.info{
+    display: flex;
+}
+.info img{
+    width: 300px;
+}
+
 
