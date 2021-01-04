@@ -171,9 +171,36 @@ footer{
 }
 .footer-section{
     flex: 1;
+    margin-top: 10px;
 }
 footer .flex{
+    align-items: flex-start;
+    justify-content: center;
     display: flex;
+}
+.footer-section ul{
+    list-style-type: none;
+}
+.footer-section ul a{
+    color: var(--mainWhite);
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.footer-section .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section .social-icons a{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
