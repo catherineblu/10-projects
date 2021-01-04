@@ -169,5 +169,11 @@ footer{
     background-color: var(--mainFooter);
     padding: 150px 0 50px;
 }
+.footer-section{
+    flex: 1;
+}
+footer .flex{
+    display: flex;
+}
 
 
