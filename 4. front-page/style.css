@@ -177,8 +177,10 @@ footer{
 footer .flex{
     margin-bottom: 15px;
     align-items: flex-start;
-    justify-content: center;
     display: flex;
+}
+.footer-section .logo{
+    width: 20px;
 }
 .footer-section ul{
     margin: 0;
