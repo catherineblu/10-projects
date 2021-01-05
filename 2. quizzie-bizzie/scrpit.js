@@ -41,7 +41,7 @@ const quizData = [
   },
 ];
 const answerEls = document.querySelectorAll(".answer");
-
+const quiz = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
@@ -95,7 +95,7 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      alert("You finished! ");
+      quiz.innerHTML = ``
     }
   }
 });
