@@ -75,6 +75,10 @@ h1{
    background-image: linear-gradient(to right, #65e2d9, #339ecc); 
    border: 0;
 }
+.btn a{
+    text-decoration: none;
+    color: var(--mainWhite);
+}
 .feature{
     width: 400px;
     text-align: center;
