@@ -48,17 +48,20 @@ color: #fbe122;
 .footer-container{
   font-size: 22px;
   background-color:  #fbe122;
-  padding: 56px;
+  padding: 66px;
   height: 50%;
   display: flex;
   justify-content: space-between;
 }
 .btn-primary{
-  background-color: #fbe122;
-  border-radius: 40%;
-  border:none;
-  cursor: pointer;
-  padding:1rem;
+   background-color: #fbe122;
+   padding: 6px 50px;
+   border-radius: 50px;
+   border: 0;
+  
+}
+.btn-primary a{
+  color: black;
   font-weight: bold;
   text-decoration: none;
 }
