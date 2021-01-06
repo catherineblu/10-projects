@@ -200,7 +200,7 @@ footer .flex{
     list-style-type: none;
 }
 .footer-section p{
-    margin: 0 0 0 10px;;
+    margin: 0 0 0 10px;
 }
 .footer-section ul a{
     color: var(--mainWhite);
@@ -223,6 +223,11 @@ footer .flex{
     justify-content: center;
     margin-left: 10px;
     align-items: center;
+}
+@media screen and (max-width: 767px){
+    .logo{
+        width: 80px;
+    }
 }
 
 
