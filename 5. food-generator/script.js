@@ -17,8 +17,11 @@ function createMeal(meal) {
         `${meal[`strIngredient${i}`]} - 
         ${meal[`strMeasure${i}`]}`
         )
+    }else{
+      break;
     }
   }
+  console.log(ingredients);
   mealContainer.innerHTML = `
      <div class="row">
       <div class="column five">
@@ -29,7 +32,9 @@ function createMeal(meal) {
        <p><strong>Tags: </strong> ${meal.strTags.split(',').join(', ')}</p>
        <h5>Ingredients</h5>
        <ul>
-
+       ${ingredients.map(ingredient => `
+       <li>${ingredient}</li>
+       `).join('')}
        </ul>
        <div class="column seven">
        <h4>${meal.strMeal}</h4>
