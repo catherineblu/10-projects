@@ -16,6 +16,8 @@ function createMeal(meal) {
        <img src="${meal.strMealThumb}" alt = "Meal image"/>
        </div>
        <p><strong>Category: </strong> ${meal.strCategory}</p>
+       <p><strong>Area: </strong> ${meal.strArea}</p>
+       <p><strong>Tags: </strong> ${meal.strTags.split(',').join(', ')}</p>
        <div class="column seven">
        <h4>${meal.strMeal}</h4>
        <p>${meal.strInstructions}</p>
