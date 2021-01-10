@@ -9,3 +9,24 @@ body{
     padding: 20px 0;
     min-width: 100vh;
 }
+img{
+    max-width: 100%;
+}
+p{
+    margin-bottom: 5px;
+}
+h3{
+    margin: 0;
+}
+h5{
+    margin: 10px 0;
+}
+li{
+    margin-bottom: 0;
+}
+.meal{
+    margin: 20px 0;
+}
+.text-center{
+    text-align: center;
+}
