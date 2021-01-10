@@ -24,7 +24,7 @@ function createMeal(meal) {
   console.log(ingredients);
   mealContainer.innerHTML = `
      <div class="row">
-      <div class="column five">
+      <div class="columns five">
        <img src="${meal.strMealThumb}" alt = "Meal image"/>
        </div>
        <p><strong>Category: </strong> ${meal.strCategory}</p>
@@ -41,5 +41,6 @@ function createMeal(meal) {
        <p>${meal.strInstructions}</p>
        </div>
        </div>
+       
     `;
 }
