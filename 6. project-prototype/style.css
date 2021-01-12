@@ -1,4 +1,18 @@
-body{
-    Font-Family: 'Playfair Display', Serif;
-Font-Size: 16px;
+body {
+  font-family: "Playfair Display", Serif;
+  font-size: 48px; /*heading*/
+  background: #e0e0e0; 
+  color: #707070;
+  margin: 0;
+  padding: 0;
 }
+p {
+  font-family: "Source Sans Pro", Sans-Serif;
+  font-size: 16px; /*-secondary*/
+}
+
+.container{
+    max-width: 400px;
+    min-width: 400px;
+}
+
