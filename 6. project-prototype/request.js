@@ -19,6 +19,6 @@ const response = await fetch(baseURL+query);
 
 //promise data
 const data = await response.json();
-console.log(data);
+return data;
 }
-requestCity('Abuja');
+
