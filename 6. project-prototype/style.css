@@ -42,3 +42,12 @@ p {
     position: relative;
     top: -60px;
 }
+.temp span{
+    font-weight: 100;
+    font-size: 5em;
+    letter-spacing: -5px;
+    white-space: nowrap;
+}
+.card-min{
+    line-height: 0.5;   
+}
