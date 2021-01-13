@@ -81,3 +81,6 @@ p {
     height:100px;
     background: #202020;
 }
+.icon-container img{
+    margin: auto;
+}
