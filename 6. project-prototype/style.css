@@ -25,3 +25,20 @@ p {
 .back-card{
     border-radius: 40px !important;
 }
+.city-name{
+    
+    position: absolute;
+    width: 100%;
+}
+.city-name p{
+    font-family: "Playfair Display", Serif !important;
+    font-size: 16pt;
+    font-weight: 400;
+}
+.city-name span{
+    font-weight: 400;
+    font-size: 36pt;
+    font-family: "Source Sans Pro", Sans-Serif;
+    position: relative;
+    top: -60px;
+}
