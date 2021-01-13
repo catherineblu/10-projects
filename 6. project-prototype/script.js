@@ -1,5 +1,10 @@
 const searchForm = document.querySelector('.search-location');
 const cityValue = document.querySelector('.search-location input');
+const cityName = document.querySelector('.city-name p')
+
+updateWeatherApp = (city)=>{
+    cityName.textContent=city.name;
+}
 
 //add event listener to the form
 
@@ -10,6 +15,8 @@ searchForm.addEventListener('submit', e =>{
     searchForm.reset();
 
     requestCity(citySearched)
-    .then((data)=>{console.log(data)})
+    .then((data)=>{
+        updateWeatherApp(data);
+    })
     .catch((error)=>{console.log(error)})
 })
