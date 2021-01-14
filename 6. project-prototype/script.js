@@ -9,6 +9,8 @@ const toCelsius = (kelvin) =>{
 } 
 
 updateWeatherApp = (city)=>{
+    const imageName = city.weather[0].icon
+    const iconSrc = `http://openweathermap.org/img/wn/${imageName}.png`
     cityName.textContent=city.name;
     cardBody.innerHTML=`
     <div class="card-mid row">
@@ -22,7 +24,7 @@ updateWeatherApp = (city)=>{
                     </div>
                 </div>
                 <div class="icon-container card shadow mx-auto">
-                    <img src="images/cloud.svg" alt="">
+                    <img src="${iconSrc}" alt="">
                 </div>
                 <div class="card-bottom px-5 py-4 row">
                     <div class="col text-center">
