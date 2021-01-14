@@ -13,12 +13,12 @@ updateWeatherApp = (city)=>{
     cardBody.innerHTML=`
     <div class="card-mid row">
                     <div class="col-8 text-center temp">
-                        <span>${}&deg;C</span>
+                        <span>${toCelsius(city.main.temp)}&deg;C</span>
                     </div>
                     <div class="col-4 condition-temp">
                         <p class="condition">${city.weather[0].description}</p>
-                        <p class="high">6&deg;C</p>
-                        <p class="low">2&deg;C</p>
+                        <p class="high">${toCelsius(city.main.temp_max)}&deg;C</p>
+                        <p class="low">${toCelsius(city.main.temp_min)}&deg;C</p>
                     </div>
                 </div>
                 <div class="icon-container card shadow mx-auto">
@@ -26,11 +26,11 @@ updateWeatherApp = (city)=>{
                 </div>
                 <div class="card-bottom px-5 py-4 row">
                     <div class="col text-center">
-                        <p>5&deg;C</p>
+                        <p>${toCelsius(city.main.feels_like)}&deg;C</p>
                         <span>Feel it like...</span>
                     </div>
                     <div class="col text-center">
-                        <p>60%</p>
+                        <p>${city.main.humidity}%</p>
                         <span>Humidity</span>
                     </div>
                 </div>
