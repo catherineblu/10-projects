@@ -3,7 +3,7 @@ const cityValue = document.querySelector('.search-location input');
 const cityName = document.querySelector('.city-name p');
 const cardBody = document.querySelector('.card-body');
 
-const spitOutCelsius = (kelvin) =>{
+const toCelsius = (kelvin) =>{
     celsius = Math.round(kelvin-273.15);
     return celsius;
 } 
@@ -13,7 +13,7 @@ updateWeatherApp = (city)=>{
     cardBody.innerHTML=`
     <div class="card-mid row">
                     <div class="col-8 text-center temp">
-                        <span>5&deg;C</span>
+                        <span>${}&deg;C</span>
                     </div>
                     <div class="col-4 condition-temp">
                         <p class="condition">${city.weather[0].description}</p>
