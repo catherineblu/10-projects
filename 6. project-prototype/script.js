@@ -16,6 +16,14 @@ const dayTime = (icon) => {
     }
 }
 
+const isDayTime = (icon) => {
+    if(icon.includes('d')){
+        return true;
+    }else{
+        return false
+    }
+}
+
 updateWeatherApp = (city)=>{
     const imageName = city.weather[0].icon
     const iconSrc = `http://openweathermap.org/img/wn/${imageName}@2x.png`
@@ -45,6 +53,11 @@ updateWeatherApp = (city)=>{
                     </div>
                 </div>
     `
+    if (isDayTime){
+        console.log('Day')
+    }else{
+        console.log('night')
+    }
 
 }
 
