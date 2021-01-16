@@ -3,6 +3,7 @@ const cityValue = document.querySelector('.search-location input');
 const cityName = document.querySelector('.city-name p');
 const cardBody = document.querySelector('.card-body');
 const timeImage = document.querySelector('.card-top img');
+const cardInfo = document.querySelector('.back-card');
 
 const toCelsius = (kelvin) =>{
     celsius = Math.round(kelvin-273.15);
@@ -72,6 +73,7 @@ updateWeatherApp = (city)=>{
             cityName.classList.add('text-white');
         }
     }
+    cardInfo.classList.remove('d-none');
 }
 
 
