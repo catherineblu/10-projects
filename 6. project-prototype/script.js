@@ -2,13 +2,14 @@ const searchForm = document.querySelector('.search-location');
 const cityValue = document.querySelector('.search-location input');
 const cityName = document.querySelector('.city-name p');
 const cardBody = document.querySelector('.card-body');
+const timeImage = document.querySelector('.card-top img');
 
 const toCelsius = (kelvin) =>{
     celsius = Math.round(kelvin-273.15);
     return celsius;
 } 
 
-const dayTime = (icon) => {
+const isdayTime = (icon) => {
     if(icon.includes('d')){
         return true;
     }else{
@@ -52,11 +53,13 @@ updateWeatherApp = (city)=>{
                         <span>Humidity</span>
                     </div>
                 </div>
-    `
-    if (isDayTime){
+    `;
+    if (isDayTime(imageName)){
         console.log('Day')
+        timeImage.setAttribute('src', 'images/day_image.svg');
     }else{
         console.log('night')
+        timeImage.setAttribute('src', 'images/night_image.svg');
     }
 
 }
