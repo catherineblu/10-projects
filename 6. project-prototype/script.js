@@ -57,13 +57,21 @@ updateWeatherApp = (city)=>{
     if (isDayTime(imageName)){
         console.log('Day')
         timeImage.setAttribute('src', 'images/day_image.svg');
+        if(cityName.classList.contains('text-white')){
+            cityName.classList.remove('text-white');
+        }else{
+            cityName.classList.add('text-black');
+        }
         cityName.classList.add('text-black');
     }else{
         console.log('night')
         timeImage.setAttribute('src', 'images/night_image.svg');
-        cityName.classList.add('text-white');
+        if(cityName.classList.contains('text-black')){
+            cityName.classList.remove('text-black');
+        }else{
+            cityName.classList.add('text-white');
+        }
     }
-
 }
 
 
