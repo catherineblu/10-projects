@@ -34,8 +34,19 @@ ul.currencies{
     background-color: #222;
     padding: 0 1.5rem 3rem 1.5rem;
 }
-ul.currencies img{
-    width: 100px;
+.flag{
+    width: 60px;
+    border: 1px solid #fff;
+    vertical-align: top;
+}
+.info{
+    display: inline-block;
+}
+.info .input span{
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
 }
 ul.currencies li{
     background-color:  #2d2d37;
@@ -46,6 +57,9 @@ ul.currencies li{
 }
 ul.currencies li:last-child{
     margin-bottom: 0;
+}
+ul.currencies li.base-currency{
+    background-color: #264d73;
 }
 .add-currency-btn{
     background-color: #00b386;
