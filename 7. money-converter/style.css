@@ -42,7 +42,10 @@ ul.currencies li{
     border-radius: 5px;
     list-style: none;
     padding: 1rem 1rem 0.75rem 1rem;
-    
+    margin-bottom: 1rem;
+}
+ul.currencies li:last-child{
+    margin-bottom: 0;
 }
 .add-currency-btn{
     background-color: #00b386;
