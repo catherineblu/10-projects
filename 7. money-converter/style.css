@@ -29,3 +29,7 @@ body{
     font-size: 0.75rem;
     padding: 0.75rem 2rem 0.75rem 0;
 }
+ul.currencies{
+    height: 500px;
+    background-color: #222;
+}
