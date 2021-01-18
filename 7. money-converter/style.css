@@ -65,6 +65,7 @@ ul.currencies li{
     list-style: none;
     padding: 1rem 1rem 0.75rem 1rem;
     margin-bottom: 1rem;
+    position: relative;
 }
 ul.currencies li:last-child{
     margin-bottom: 0;
@@ -84,6 +85,18 @@ ul.currencies li.base-currency{
     width: 100%;
     cursor: pointer;
     transition: background-color 0.25s;
+}
+ul.currencies li .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+ul.currencies li .close:hover{
+    color: #fff;
 }
 .info .currency-name{
     font-size: 1rem;
