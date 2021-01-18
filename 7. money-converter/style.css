@@ -30,7 +30,7 @@ body{
     padding: 0.75rem 2rem 0.75rem 0;
 }
 ul.currencies{
-    height: 500px;
+    height: calc(100vh - 40px - 100px - 40px - 58px);
     background-color: #222;
     padding: 0 1.5rem 3rem 1.5rem;
 }
