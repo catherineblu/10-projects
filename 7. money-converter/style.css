@@ -127,4 +127,22 @@ ul.add-currency-list{
     width: 100%;
     height: calc(100vh - 40px - 100px - 55px);
     overflow-y: auto;
+    display: none;
+}
+ul.add-currency-list li{
+    list-style: none;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+ul.add-currency-list li .flag{
+    width: 3rem;
+    vertical-align: middle;
+}
+ul.add-currency-list li span{
+    margin-left: 1rem;
+    font-weight: bold;
+}
+ul.add-currency-list li.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
 }
