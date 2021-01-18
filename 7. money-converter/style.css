@@ -32,6 +32,15 @@ body{
 ul.currencies{
     height: 500px;
     background-color: #222;
+    padding: 0 1.5rem 3rem 1.5rem;
+}
+ul.currencies img{
+    width: 100px;
+}
+ul.currencies li{
+    background-color:  #2d2d37;
+    border-radius: 5px;
+    
 }
 .add-currency-btn{
     background-color: #00b386;
