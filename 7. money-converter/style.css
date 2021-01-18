@@ -33,3 +33,16 @@ ul.currencies{
     height: 500px;
     background-color: #222;
 }
+.add-currency-btn{
+    background-color: #00b386;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-top: 3px solid #222;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
