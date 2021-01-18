@@ -40,6 +40,8 @@ ul.currencies img{
 ul.currencies li{
     background-color:  #2d2d37;
     border-radius: 5px;
+    list-style: none;
+    padding: 1rem 1rem 0.75rem 1rem;
     
 }
 .add-currency-btn{
