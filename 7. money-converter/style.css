@@ -85,3 +85,13 @@ ul.currencies li.base-currency{
     cursor: pointer;
     transition: background-color 0.25s;
 }
+.info .currency-name{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+}
+.info .base-currency-rate{
+    font-size: 0.8rem;
+    margin-left: 4rem;
+}
