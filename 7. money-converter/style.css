@@ -109,3 +109,11 @@ ul.currencies li .close:hover{
     font-size: 0.8rem;
     margin-left: 4rem;
 }
+/*Scrollbar*/
+ul.currencies::-webkit-scrollbar{
+    width: 5px;
+}
+ul.currencies::-webkit-scrollbar-thumb{
+    background-color: #2d2d37;
+    border-bottom: #222;
+}
