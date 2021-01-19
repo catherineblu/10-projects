@@ -237,6 +237,7 @@ function currenciesListClick(event){
   if(event.target.classList.contains("close")){
     const parentNode = event.target.parentNode;
     parentNode.remove();
+    addCurrencyList.querySelector(`[data-currency=${parentNode.id}]`).classList.remove("disabled");
   }
 }
 
