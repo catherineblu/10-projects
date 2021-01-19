@@ -221,6 +221,16 @@ function addCurrencyBtnClick(event) {
   addCurrencyBtn.classList.toggle("open");
 }
 
+addCurrencyList.addEventListener("click", addCurrencyListClick);
+
+function addCurrencyListClick(event){
+  const clickedListItem = event.target.closest("li");
+  if(!clickedListItem.classList.contains("disabled")){
+    const newCurrency = currencies.find(c => c.abbreviation===clickedListItem.getAttribute("data-currency"));
+    if(newCurrency) newCurrenciesListItem(newCurrency);
+  }
+}
+
 function populateAddCurrencyList() {
   for (let i = 0; i < currencies.length; i++) {
     addCurrencyList.insertAdjacentHTML(
