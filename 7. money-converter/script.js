@@ -231,6 +231,15 @@ function addCurrencyListClick(event){
   }
 }
 
+currenciesList.addEventListener("click", currenciesListClick);
+
+function currenciesListClick(event){
+  if(event.target.classList.contains("close")){
+    const parentNode = event.target.parentNode;
+    parentNode.remove();
+  }
+}
+
 function populateAddCurrencyList() {
   for (let i = 0; i < currencies.length; i++) {
     addCurrencyList.insertAdjacentHTML(
