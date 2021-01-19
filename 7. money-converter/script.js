@@ -215,8 +215,8 @@ function populateAddCurrencyList() {
   for (let i = 0; i < currencies.length; i++) {
     addCurrencyList.insertAdjacentHTML(
       "beforeend",
-      `<li data-currency="USD">
-            <img src="/images/in.gif" alt="India flag" class="flag"><span>RS - Rupees</span>
+      `<li data-currency=${currencies[i].abbreviation}>
+            <img src=${currencies[i].flagURL} class="flag"><span>${currencies[i].abbreviation} - ${currencies[i].name}</span>
             </li>`
     );
   }
