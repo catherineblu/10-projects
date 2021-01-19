@@ -92,7 +92,7 @@ ul.currencies li.base-currency{
   background-color: #d9534f;  
 }
 .add-currency-btn:hover + ul.add-currency-list{
-    display: block;
+    height: calc(100vh - 40px - 100px - 55px)
 }
 ul.currencies li .close{
     position: absolute;
@@ -131,9 +131,9 @@ ul.add-currency-list{
     background-color: #f1f1f1;
     color: #333;
     width: 100%;
-    height: calc(100vh - 40px - 100px - 55px);
+    height: 0;
     overflow-y: auto;
-    display: none;
+    transition: all 0.25s;
 }
 ul.add-currency-list li{
     list-style: none;
