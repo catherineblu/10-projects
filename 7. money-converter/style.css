@@ -88,6 +88,12 @@ ul.currencies li.base-currency{
     cursor: pointer;
     transition: background-color 0.25s;
 }
+.add-currency-btn:hover{
+  background-color: #d9534f;  
+}
+.add-currency-btn:hover + ul.add-currency-list{
+    display: block;
+}
 ul.currencies li .close{
     position: absolute;
     top: 0;
