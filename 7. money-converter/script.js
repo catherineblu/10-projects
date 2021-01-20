@@ -233,23 +233,24 @@ function addCurrencyListClick(event){
 
 currenciesList.addEventListener("click", currenciesListClick);
 
-function currenciesListClick(event){
-  if(event.target.classList.contains("close")){
+function currenciesListClick(event) {
+  if(event.target.classList.contains("close")) {
     const parentNode = event.target.parentNode;
     parentNode.remove();
     addCurrencyList.querySelector(`[data-currency=${parentNode.id}]`).classList.remove("disabled");
-    if(parentNode.classList.contains("base-currency")){
+    if(parentNode.classList.contains("base-currency")) {
       const newBaseCurrencyLI = currenciesList.querySelector(".currency");
       if(newBaseCurrencyLI) {
-        setNewBaseCurrency(newCurrenciesLI);
+        setNewBaseCurrency(newBaseCurrencyLI);
+        baseCurrencyAmount = Number(newBaseCurrencyLI.querySelector(".input input").value);
       }
     }
   }
 }
 
-function setNewBaseCurrency(newCurrenciesLI) {
-  newCurrenciesLI.classList.add("base-currency");
-  baseCurrency = newCurrenciesLI.id;
+function setNewBaseCurrency(newBaseCurrencyLI) {
+  newBaseCurrencyLI.classList.add("base-currency");
+  baseCurrency = newBaseCurrencyLI.id;
   const baseCurrencyRate = currencies.find(currency => currency.abbreviation===baseCurrency).rate;
   currenciesList.querySelectorAll(".currency").forEach(currencyLI => {
     const currencyRate = currencies.find(currency => currency.abbreviation===currencyLI.id).rate;
