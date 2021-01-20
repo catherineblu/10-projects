@@ -337,7 +337,7 @@ function newCurrenciesListItem(currency){
    .then(data => {
      console.log(data);
 
-     document.querySelector(".date").textContent = data.date;
+     document.querySelector(".date").textContent = data.date.split("-").reverse().join("-");
    })
    .catch(err => console.log(err));
 populateAddCurrencyList();
