@@ -288,6 +288,12 @@ function currenciesListFocusOut(event){
   else event.target.value = Number(inputValue).toFixed(4);
 }
 
+currenciesList.addEventListener("keydown", currenciesListKeyDown);
+
+function currenciesListKeyDown(event){
+  if(event.key==="Enter") event.target.blur();
+}
+
 function populateAddCurrencyList() {
   for (let i = 0; i < currencies.length; i++) {
     addCurrencyList.insertAdjacentHTML(
