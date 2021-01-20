@@ -338,6 +338,9 @@ function newCurrenciesListItem(currency){
      console.log(data);
 
      document.querySelector(".date").textContent = data.date.split("-").reverse().join("-");
+     data.rates["EUR"] = 1;
+     currencies = currencies.filter(aurrency => data.rate[currency.abbreviation]);
+     currencies.forEach(currency => currency.rate = data.rate[currency.abbreviation]); 
    })
    .catch(err => console.log(err));
 populateAddCurrencyList();
