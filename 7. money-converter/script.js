@@ -271,9 +271,11 @@ function currenciesListInputChange(event){
     baseCurrencyAmount = newBaseCurrencyAmount;
     const baseCurrencyRate = currencies.find(currency => currency.abbreviation===baseCurrency).rate;
     currenciesList.querySelectorAll(".currency").forEach(currencyLI => {
-      const currencyRate = currencies.find(currency => currency.abbreviation===currencyLI.id).rate;
+      if(currencyLI.id!==baseCurrency) {
+        const currencyRate = currencies.find(currency => currency.abbreviation===currencyLI.id).rate;
       const exchangeRate = currencyLI.id===baseCurrency ? 1 : (currencyRate/baseCurrencyRate).toFixed(4);
       currencyLI.querySelector(".input input").value = exchangeRate*baseCurrencyAmount!==0 ? (exchangeRate*baseCurrencyAmount).toFixed(4) : "";
+      }
     });
   }
 }
