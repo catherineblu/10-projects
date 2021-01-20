@@ -238,7 +238,24 @@ function currenciesListClick(event){
     const parentNode = event.target.parentNode;
     parentNode.remove();
     addCurrencyList.querySelector(`[data-currency=${parentNode.id}]`).classList.remove("disabled");
+    if(parentNode.classList.contains("base-currency")){
+      const newBaseCurrencyLI = currenciesList.querySelector(".currency");
+      if(newBaseCurrencyLI) {
+        setNewBaseCurrency(newCurrenciesLI);
+      }
+    }
   }
+}
+
+function setNewBaseCurrency(newCurrenciesLI) {
+  newCurrenciesLI.classList.add("base-currency");
+  baseCurrency = newCurrenciesLI.id;
+  const baseCurrencyRate = currencies.find(currency => currency.abbreviation===baseCurrency).rate;
+  currenciesList.querySelectorAll(".currency").forEach(currencyLI => {
+    const currencyRate = currencies.find(currency => currency.abbreviation===currencyLI.id).rate;
+    const exchangeRate = currencyLI.id===baseCurrency ? 1 : (currencyRate/baseCurrencyRate).toFixed(4);
+    currencyLI.querySelector(".base-currency-rate").textContent = `1 ${baseCurrency} = ${exchangeRate} ${currencyLI.id}`;
+  });
 }
 
 function populateAddCurrencyList() {
