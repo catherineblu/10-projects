@@ -9,7 +9,7 @@ const initiallyDisplayedCurrencies = ["USD", "EUR", "GBP", "JPY", "RUB"];
 let baseCurrency;
 let baseCurrencyAmount;
 
-const currencies = [
+let currencies = [
   {
     name: "US Dollar",
     abbreviation: "USD",
@@ -332,17 +332,16 @@ function newCurrenciesListItem(currency){
   );
     }
 
-   fetch(dataURL)
-   .then (res => res.json())
-   .then(data => {
-     console.log(data);
+    fetch(dataURL)
+    .then(res => res.json())
+    .then(data => {
+      document.querySelector(".date").textContent = data.date;
+      data.rates["EUR"] = 1;
+      currencies = currencies.filter(currency => data.rates[currency.abbreviation]);
+      currencies.forEach(currency => currency.rate = data.rates[currency.abbreviation]);
+      populateAddCurrencyList();
+      populateCurrenciesList();
+    })
+    .catch(err => console.log(err));
 
-     document.querySelector(".date").textContent = data.date.split("-").reverse().join("-");
-     data.rates["EUR"] = 1;
-     currencies = currencies.filter(aurrency => data.rate[currency.abbreviation]);
-     currencies.forEach(currency => currency.rate = data.rate[currency.abbreviation]); 
-   })
-   .catch(err => console.log(err));
-populateAddCurrencyList();
-populateCurrenciesList();
 
