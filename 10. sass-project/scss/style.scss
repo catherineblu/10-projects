@@ -13,4 +13,14 @@ body{
     font-family: $font-stack;
     line-height: 1.6;
 }
-
+.showcase{
+    background-color: $primary-color;
+    color: #fff;
+    height: 600px;
+}
+.container{
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+}
