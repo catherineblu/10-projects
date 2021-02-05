@@ -1,5 +1,7 @@
 $light-color: #f4f4f4;
 $font-stack: Arial, Helvetica, sans-serif;
+$primary-color: #0e6cff;
+$secondary-color: #ff8700;
 
 *{
     box-sizing: border-box;
@@ -11,3 +13,4 @@ body{
     font-family: $font-stack;
     line-height: 1.6;
 }
+
