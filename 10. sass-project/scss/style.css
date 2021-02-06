@@ -17,8 +17,8 @@
 }
 
 .btn-primary {
-  background-color: white;
-  color: #333;
+  background-color: #418bff;
+  color: #fff;
 }
 
 .btn-secondary {
@@ -47,8 +47,8 @@ body {
 }
 
 .showcase {
-  background-color: #e0ffff;
-  color: #333;
+  background-color: #0e6cff;
+  color: #fff;
   height: 600px;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .showcase nav a {
-  color: #333;
+  color: #fff;
 }
 
 .showcase nav a:hover {
