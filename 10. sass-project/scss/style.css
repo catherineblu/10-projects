@@ -18,10 +18,12 @@
 
 .btn-primary {
   background-color: white;
+  color: #333;
 }
 
 .btn-secondary {
   background-color: #ff8700;
+  color: #fff;
 }
 
 * {
@@ -71,10 +73,6 @@ body {
 
 .showcase nav a:hover {
   color: #ff8700;
-}
-
-.showcase a {
-  color: #fff;
 }
 
 .showcase-content {
