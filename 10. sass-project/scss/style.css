@@ -1,81 +1,81 @@
-.m-space {
-  margin: spacerem;
+.m-1 {
+  margin: 1rem;
 }
 
-.my-space {
-  margin: spacerem 0;
+.my-1 {
+  margin: 1rem 0;
 }
 
-.p-space {
-  padding: spacerem;
+.p-1 {
+  padding: 1rem;
 }
 
-.py-space {
-  padding: spacerem 0;
+.py-1 {
+  padding: 1rem 0;
 }
 
-.m-space {
-  margin: spacerem;
+.m-2 {
+  margin: 2rem;
 }
 
-.my-space {
-  margin: spacerem 0;
+.my-2 {
+  margin: 2rem 0;
 }
 
-.p-space {
-  padding: spacerem;
+.p-2 {
+  padding: 2rem;
 }
 
-.py-space {
-  padding: spacerem 0;
+.py-2 {
+  padding: 2rem 0;
 }
 
-.m-space {
-  margin: spacerem;
+.m-3 {
+  margin: 3rem;
 }
 
-.my-space {
-  margin: spacerem 0;
+.my-3 {
+  margin: 3rem 0;
 }
 
-.p-space {
-  padding: spacerem;
+.p-3 {
+  padding: 3rem;
 }
 
-.py-space {
-  padding: spacerem 0;
+.py-3 {
+  padding: 3rem 0;
 }
 
-.m-space {
-  margin: spacerem;
+.m-4 {
+  margin: 4rem;
 }
 
-.my-space {
-  margin: spacerem 0;
+.my-4 {
+  margin: 4rem 0;
 }
 
-.p-space {
-  padding: spacerem;
+.p-4 {
+  padding: 4rem;
 }
 
-.py-space {
-  padding: spacerem 0;
+.py-4 {
+  padding: 4rem 0;
 }
 
-.m-space {
-  margin: spacerem;
+.m-5 {
+  margin: 5rem;
 }
 
-.my-space {
-  margin: spacerem 0;
+.my-5 {
+  margin: 5rem 0;
 }
 
-.p-space {
-  padding: spacerem;
+.p-5 {
+  padding: 5rem;
 }
 
-.py-space {
-  padding: spacerem 0;
+.py-5 {
+  padding: 5rem 0;
 }
 
 .container {
